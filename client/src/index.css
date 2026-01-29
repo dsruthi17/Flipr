@@ -1,0 +1,13 @@
+/* Import design system */
+@import './components.css';
+
+/* Additional global styles */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
