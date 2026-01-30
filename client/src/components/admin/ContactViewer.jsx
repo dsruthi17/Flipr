@@ -75,7 +75,7 @@ function ContactViewer() {
             </thead>
             <tbody>
               {contacts.map((contact) => (
-                <tr key={contact._id} style={{ borderBottom: '1px solid #e2e8f0' }}>
+                <tr key={contact.id} style={{ borderBottom: '1px solid #e2e8f0' }}>
                   <td style={{ padding: '1rem' }}>
                     <div style={{ fontWeight: '600' }}>{contact.fullName}</div>
                   </td>
@@ -102,7 +102,7 @@ function ContactViewer() {
                   </td>
                   <td style={{ padding: '1rem', textAlign: 'center' }}>
                     <button
-                      onClick={() => handleDelete(contact._id)}
+                      onClick={() => handleDelete(contact.id)}
                       style={{
                         padding: '0.5rem',
                         background: 'rgba(239, 68, 68, 0.1)',

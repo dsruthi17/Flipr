@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Plus, Trash2, Loader, Image as ImageIcon, Star } from 'lucide-react';
-import { getClients, createClient, deleteClient } from '../../api';
+import { getClients, createClient, deleteClient, API_URL } from '../../api';
 import ImageCropModal from './ImageCropModal';
 import { readFile } from '../../utils/cropImage';
 
@@ -234,7 +234,7 @@ function ClientManager() {
           <div style={{ display: 'grid', gap: '1rem' }}>
             {clients.map((client) => (
               <div
-                key={client._id}
+                key={client.id}
                 style={{
                   display: 'flex',
                   gap: '1rem',
@@ -246,7 +246,7 @@ function ClientManager() {
               >
                 {client.image && (
                   <img
-                    src={`http://localhost:5000${client.image}`}
+                    src={`${API_URL}${client.image}`}
                     alt={client.name}
                     style={{
                       width: '60px',
@@ -278,7 +278,7 @@ function ClientManager() {
                   </p>
                 </div>
                 <button
-                  onClick={() => handleDelete(client._id)}
+                  onClick={() => handleDelete(client.id)}
                   style={{
                     padding: '0.5rem',
                     background: 'rgba(239, 68, 68, 0.1)',

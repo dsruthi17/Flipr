@@ -74,7 +74,7 @@ function SubscriberViewer() {
             </thead>
             <tbody>
               {subscribers.map((subscriber) => (
-                <tr key={subscriber._id} style={{ borderBottom: '1px solid #e2e8f0' }}>
+                <tr key={subscriber.id} style={{ borderBottom: '1px solid #e2e8f0' }}>
                   <td style={{ padding: '1rem' }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                       <Mail size={16} color="#64748b" />
@@ -106,7 +106,7 @@ function SubscriberViewer() {
                   </td>
                   <td style={{ padding: '1rem', textAlign: 'center' }}>
                     <button
-                      onClick={() => handleDelete(subscriber._id)}
+                      onClick={() => handleDelete(subscriber.id)}
                       style={{
                         padding: '0.5rem',
                         background: 'rgba(239, 68, 68, 0.1)',

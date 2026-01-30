@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Plus, Trash2, Loader, Image as ImageIcon } from 'lucide-react';
-import { getProjects, createProject, deleteProject } from '../../api';
+import { getProjects, createProject, deleteProject, API_URL } from '../../api';
 import ImageCropModal from './ImageCropModal';
 import { readFile } from '../../utils/cropImage';
 
@@ -200,7 +200,7 @@ function ProjectManager() {
           <div style={{ display: 'grid', gap: '1rem' }}>
             {projects.map((project) => (
               <div
-                key={project._id}
+                key={project.id}
                 style={{
                   display: 'flex',
                   gap: '1rem',
@@ -212,7 +212,7 @@ function ProjectManager() {
               >
                 {project.image && (
                   <img
-                    src={`http://localhost:5000${project.image}`}
+                    src={`${API_URL}${project.image}`}
                     alt={project.name}
                     style={{
                       width: '80px',
@@ -231,7 +231,7 @@ function ProjectManager() {
                   </p>
                 </div>
                 <button
-                  onClick={() => handleDelete(project._id)}
+                  onClick={() => handleDelete(project.id)}
                   style={{
                     padding: '0.5rem',
                     background: 'rgba(239, 68, 68, 0.1)',

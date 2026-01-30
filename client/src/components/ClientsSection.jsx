@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Star, Loader } from 'lucide-react';
-import { getClients } from '../api';
+import { getClients, API_URL } from '../api';
 
 function ClientsSection() {
   const [clients, setClients] = useState([]);
@@ -91,7 +91,7 @@ function ClientsSection() {
           }}>
             {clients.map((client) => (
               <div
-                key={client._id}
+                key={client.id}
                 style={{
                   background: 'white',
                   borderRadius: '1rem',
@@ -117,7 +117,7 @@ function ClientsSection() {
                 }}>
                   {client.image ? (
                     <img
-                      src={`http://localhost:5000${client.image}`}
+                      src={`${API_URL}${client.image}`}
                       alt={client.name}
                       style={{
                         width: '60px',

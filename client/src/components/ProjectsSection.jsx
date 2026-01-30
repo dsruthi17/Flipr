@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { ExternalLink, Loader } from 'lucide-react';
-import { getProjects } from '../api';
+import { getProjects, API_URL } from '../api';
 
 function ProjectsSection() {
   const [projects, setProjects] = useState([]);
@@ -80,7 +80,7 @@ function ProjectsSection() {
           }}>
             {projects.map((project) => (
               <div
-                key={project._id}
+                key={project.id}
                 style={{
                   background: 'white',
                   borderRadius: '1rem',
@@ -107,7 +107,7 @@ function ProjectsSection() {
                 }}>
                   {project.image && (
                     <img
-                      src={`http://localhost:5000${project.image}`}
+                      src={`${API_URL}${project.image}`}
                       alt={project.name}
                       style={{
                         position: 'absolute',
