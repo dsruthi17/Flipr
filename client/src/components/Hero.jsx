@@ -63,7 +63,7 @@ function Hero() {
             WebkitBackgroundClip: 'text',
             WebkitTextFillColor: 'transparent',
           }}>
-            Welcome to Flipr
+            Welcome to Nexora
           </span>
         </div>
 

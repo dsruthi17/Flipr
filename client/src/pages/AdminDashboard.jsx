@@ -49,7 +49,7 @@ function AdminDashboard() {
             marginBottom: '2rem',
             fontFamily: 'Poppins, sans-serif',
           }}>
-            Flipr Admin
+            Nexora Admin
           </div>
 
           {/* Menu Items */}

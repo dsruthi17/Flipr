@@ -92,7 +92,7 @@ function ContactSection() {
                 background: 'linear-gradient(135deg, #f97316 0%, #ea580c 100%)',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
-              }}>Flipr</span>
+              }}>Nexora</span>
             </h3>
 
             <p style={{

@@ -28,7 +28,7 @@ function Footer() {
               marginBottom: '1rem',
               fontFamily: 'Poppins, sans-serif',
             }}>
-              Flipr
+              Nexora
             </div>
             <p style={{
               color: '#94a3b8',
@@ -162,7 +162,7 @@ function Footer() {
             }}>
               <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'start' }}>
                 <Mail size={20} color="#f97316" style={{ marginTop: '2px' }} />
-                <span style={{ color: '#94a3b8' }}>contact@flipr.com</span>
+                <span style={{ color: '#94a3b8' }}>contact@nexora.com</span>
               </div>
               <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'start' }}>
                 <Phone size={20} color="#f97316" style={{ marginTop: '2px' }} />
@@ -193,7 +193,7 @@ function Footer() {
             alignItems: 'center',
             gap: '0.5rem',
           }}>
-            © {currentYear} Flipr. Made with <Heart size={16} fill="#f97316" color="#f97316" /> in India
+            © {currentYear} Nexora. Made with <Heart size={16} fill="#f97316" color="#f97316" /> in India
           </p>
           <div style={{
             display: 'flex',

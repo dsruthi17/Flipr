@@ -69,7 +69,7 @@ function AboutPage() {
               background: 'linear-gradient(135deg, #f97316 0%, #ea580c 100%)',
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
-            }}>Flipr</span>
+            }}>Nexora</span>
           </h1>
           <p style={{
             fontSize: 'clamp(1rem, 2vw, 1.25rem)',
@@ -236,7 +236,7 @@ function AboutPage() {
             gap: '1.5rem',
           }}>
             <p>
-              Founded in 2014, Flipr started with a simple mission: to help businesses thrive in 
+              Founded in 2014, Nexora started with a simple mission: to help businesses thrive in 
               the digital age. What began as a small team of passionate developers has grown into 
               a full-service digital agency serving clients worldwide.
             </p>
@@ -267,7 +267,7 @@ function AboutPage() {
             marginBottom: '3rem',
             fontFamily: 'Poppins, sans-serif',
           }}>
-            Why Choose Flipr?
+            Why Choose Nexora?
           </h2>
           <div style={{
             display: 'grid',

@@ -40,7 +40,7 @@ function Navbar() {
           WebkitTextFillColor: 'transparent',
           fontFamily: 'Poppins, sans-serif',
         }}>
-          Flipr
+          Nexora
         </div>
 
         {/* Desktop Menu */}
